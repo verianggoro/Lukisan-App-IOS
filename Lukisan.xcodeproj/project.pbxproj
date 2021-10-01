@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6A5F1F6327074E34006C7D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6227074E34006C7D45 /* AppDelegate.swift */; };
 		6A5F1F6527074E34006C7D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6427074E34006C7D45 /* SceneDelegate.swift */; };
-		6A5F1F6727074E34006C7D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6627074E34006C7D45 /* ViewController.swift */; };
 		6A5F1F6A27074E34006C7D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6827074E34006C7D45 /* Main.storyboard */; };
 		6A5F1F6C27074E36006C7D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6B27074E36006C7D45 /* Assets.xcassets */; };
 		6A5F1F6F27074E36006C7D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F1F6D27074E36006C7D45 /* LaunchScreen.storyboard */; };
+		6A5F1F7727074E9A006C7D45 /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F7627074E9A006C7D45 /* ArtWork.swift */; };
+		6A5F1F7927075742006C7D45 /* ArtworkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F7827075742006C7D45 /* ArtworkTableViewController.swift */; };
+		6A5F1F7B27075D95006C7D45 /* ArtworkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F1F7A27075D95006C7D45 /* ArtworkViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A5F1F5F27074E34006C7D45 /* Lukisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lukisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5F1F6227074E34006C7D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5F1F6427074E34006C7D45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A5F1F6627074E34006C7D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A5F1F6927074E34006C7D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A5F1F6B27074E36006C7D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5F1F6E27074E36006C7D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5F1F7027074E36006C7D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5F1F7627074E9A006C7D45 /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
+		6A5F1F7827075742006C7D45 /* ArtworkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewController.swift; sourceTree = "<group>"; };
+		6A5F1F7A27075D95006C7D45 /* ArtworkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		6A5F1F6127074E34006C7D45 /* Lukisan */ = {
 			isa = PBXGroup;
 			children = (
+				6A5F1F7E270762EA006C7D45 /* view */,
+				6A5F1F7D270762E3006C7D45 /* controller */,
+				6A5F1F7C270762DB006C7D45 /* model */,
 				6A5F1F6227074E34006C7D45 /* AppDelegate.swift */,
 				6A5F1F6427074E34006C7D45 /* SceneDelegate.swift */,
-				6A5F1F6627074E34006C7D45 /* ViewController.swift */,
-				6A5F1F6827074E34006C7D45 /* Main.storyboard */,
 				6A5F1F6B27074E36006C7D45 /* Assets.xcassets */,
 				6A5F1F6D27074E36006C7D45 /* LaunchScreen.storyboard */,
 				6A5F1F7027074E36006C7D45 /* Info.plist */,
 			);
 			path = Lukisan;
+			sourceTree = "<group>";
+		};
+		6A5F1F7C270762DB006C7D45 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6A5F1F7627074E9A006C7D45 /* ArtWork.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6A5F1F7D270762E3006C7D45 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A5F1F7827075742006C7D45 /* ArtworkTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A5F1F7E270762EA006C7D45 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6A5F1F6827074E34006C7D45 /* Main.storyboard */,
+				6A5F1F7A27075D95006C7D45 /* ArtworkViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5F1F6727074E34006C7D45 /* ViewController.swift in Sources */,
+				6A5F1F7927075742006C7D45 /* ArtworkTableViewController.swift in Sources */,
+				6A5F1F7B27075D95006C7D45 /* ArtworkViewCell.swift in Sources */,
 				6A5F1F6327074E34006C7D45 /* AppDelegate.swift in Sources */,
+				6A5F1F7727074E9A006C7D45 /* ArtWork.swift in Sources */,
 				6A5F1F6527074E34006C7D45 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
